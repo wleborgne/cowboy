@@ -79,7 +79,7 @@ init(Ref, Socket, Transport, Opts) ->
 	Compress = get_value(compress, Opts, false),
 	MaxEmptyLines = get_value(max_empty_lines, Opts, 5),
 	MaxHeaderNameLength = get_value(max_header_name_length, Opts, 64),
-	MaxHeaderValueLength = get_value(max_header_value_length, Opts, 4096),
+	MaxHeaderValueLength = get_value(max_header_value_length, Opts, 1024),
 	MaxHeaders = get_value(max_headers, Opts, 100),
 	MaxKeepalive = get_value(max_keepalive, Opts, 100),
 	MaxRequestLineLength = get_value(max_request_line_length, Opts, 4096),
